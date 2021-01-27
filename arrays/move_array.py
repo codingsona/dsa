@@ -3,7 +3,7 @@
 Given an input array and toMove element which is an element of the input array. Our task is to 
 rearrange the array by moving the toMove element to the end of the array.. 
  """
-
+#O(n) Time | O(1) Space
 def moveArray(array,toMove):
     l=0
     r=len(array)-1
