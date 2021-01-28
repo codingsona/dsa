@@ -8,7 +8,9 @@ def moveArray(array,toMove):
     l=0
     r=len(array)-1
     while l < r:
-        while array[r] == toMove and r > l:
+        while array[r] == toMove:
+            if r == l:
+                return array
             r -= 1
         if array[l] == toMove:
             array[l], array[r] = array[r], array[l]
