@@ -1,16 +1,17 @@
 def bubbleSort(arr):
-    rp = len(arr)-1
-    lp = rp-1
     swapped = True
+    counter = 0
     while swapped == True:
         swapped = False
-        for rp in range(rp,0,-1):
+        rp = len(arr) - 1
+        lp = rp - 1
+        while lp >= counter:
             if arr[lp] > arr[rp]:
                 arr[lp],arr[rp] = arr[rp],arr[lp]
                 swapped = True
-                lp -= 1
+            rp -= 1
+            lp -= 1
+        counter += 1
     return arr
 
-
-
-print(bubbleSort([5,9,3,1,2,8,4,7,6]))
+print(bubbleSort([1,2,5,9,3,4,8,6,7]))
