@@ -4,8 +4,8 @@ def swap_name(in_str):
     name_swapped = ('').join(new_list)
     print(name_swapped)
 
-swap_name('sonali')
-swap_name('shanti')
+swap_name('ABCD')
+swap_name('FDGH')
 
 
 
