@@ -10,4 +10,8 @@
 #### 1. bubbleSort
 #### 2. SelectionSort
 #### 3. InsertionSort
+#### 4.QuickSort
+
+
+## *LinkedList
 
