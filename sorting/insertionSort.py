@@ -1,4 +1,5 @@
 def insertionSort(arr):
+    # O(N^2) time | O(1) space
     for i in range(1,len(arr)):
         for j in range(i,0,-1):
             if arr[j] < arr[j-1]:
@@ -6,6 +7,6 @@ def insertionSort(arr):
 
     return arr
 
-ins_ar = [4,3,6,9,1,5,2,8,7,10]
+ins_ar = [1,2,3,4,5,6,8,9,7,10]
 result = insertionSort(ins_ar)
 print(result)
