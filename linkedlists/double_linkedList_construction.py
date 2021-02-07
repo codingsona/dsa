@@ -54,6 +54,6 @@ class DoubleLinkedList:
 ll1 = DoubleLinkedList()
 
 node1 = Node(2)
-n
+
 
 
