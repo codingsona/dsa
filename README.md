@@ -7,7 +7,7 @@
 
 
 ## Sorting
-#### 1. bubbleSort
+#### 1. BubbleSort
 #### 2. SelectionSort
 #### 3. InsertionSort
 #### 4.QuickSort
