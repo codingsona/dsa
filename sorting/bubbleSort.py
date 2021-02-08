@@ -14,4 +14,4 @@ def bubbleSort(arr):
         counter += 1
     return arr
 
-print(bubbleSort([1,2,5,9,3,4,8,6,7]))
+print(bubbleSort([1,2,5,9,3,4,8,6,0]))
