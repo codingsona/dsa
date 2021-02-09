@@ -10,7 +10,7 @@
 #### 1. BubbleSort
 #### 2. SelectionSort
 #### 3. InsertionSort
-#### 4.QuickSort
+#### 4. QuickSort
 
 
 ## **LinkedList..pending
