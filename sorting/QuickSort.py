@@ -36,7 +36,7 @@ def recursiveQs(arr, start, end):
         recursiveQs(arr, start, lp - 1)
 
 
-print(quickSort([11, 4, 12, 6, 8, 9, 7, 1, 3, 10, 2, 5]))
+print(quickSort([4, 12, 6, 8, 9, 7, 1, 3, 9, 2, 5]))
 
 print(quickSort([4, 3, 1, 6]))
 
