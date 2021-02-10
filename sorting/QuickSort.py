@@ -38,6 +38,6 @@ def recursiveQs(arr, start, end):
 
 print(quickSort([4, 12, 6, 8, 9, 7, 1, 3, 9, 2, 5]))
 
-print(quickSort([4, 3, 1, 6]))
+print(quickSort([4, 3, 1, 7]))
 
 
