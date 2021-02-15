@@ -16,7 +16,7 @@ combinations: create the combinations of the elements of an iterable.
 
 from itertools import repeat, islice, count, cycle, product, permutations, combinations
 
-"""
+
 def add_three(num):
     return num+3
 
@@ -66,7 +66,7 @@ for tshirt in tshirts:
 print("sample product: %s" % list(product("ABC", "10")))
 print("sample product: %s" % list(product(["ABC"], "10")))
 
-"""
+
 print("sample permutations: %s" % list(permutations(['A', 'B', 'C'])))
 
 print("sample permutations: %s" % list(permutations(['A', 'B', 'C'], r=2)))
