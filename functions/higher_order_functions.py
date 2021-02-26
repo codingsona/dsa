@@ -17,6 +17,7 @@ def add_three(x):
 assert(add_three(10)) == 13
 
 
+
 # Problem: if we had to write dozens or hundreds of similar functions,
 # it would get tiring pretty fast!
 # Solution: We can write a function that will let us mass produce functions which will add different numbers.
@@ -38,7 +39,7 @@ assert(add_five(10)) == 15
 
 
 # we can even call it directly
-assert(make_adder(4)(10)) == 14
+assert(make_adder(6)(10)) == 16
 assert(make_adder(5)(10)) == 15
 
 
@@ -57,12 +58,13 @@ inData = [
         "salary": 150,
     },
     {
-        "name": "John Doe",
-        "age": "15",
+        "name": "John oe",
+        "age": 15,
         "salary": 200000,
     },
 ]
-print(inData)
+
+#print(inData)
 
 # * Ignore any person with an empty name.
 # * Ignore any person with an age less than 18.
@@ -74,13 +76,14 @@ def has_empty_name(person):
     return person['name'] == ''
 
 def has_age_under_18(person):
+    #convert_age_to_number(person)
     return person['age'] < 18
 
 def convert_age_to_number(person):
-    person['age'] = float(person['age'])
+    person['age'] = int(person['age'])
 
 def convert_salary_to_number(person):
-    person['salary'] = float(person['salary'])
+    person['salary'] = int(person['salary'])
 
 def convert_salary_to_yearly(person):
     if person['salary'] < 500:
@@ -93,23 +96,26 @@ def clean_data(data, cleaners, filters):
     for item in data:
         for cleaner_func in cleaners:
             cleaner_func(item)
+
     # then keep only the good data
     out = []
     for item in data:
+        append = True
         for filter_func in filters:
             # don't add this item if the filter returns False
             if filter_func(item):
-                break
+                append = False
+
+        if append == True:
             out.append(item)
+
     return out
 
 
 outData = clean_data(inData,
     cleaners = [convert_age_to_number, convert_salary_to_number, convert_salary_to_yearly],
-    filters = [has_empty_name, has_age_under_18])
+                     filters = [has_empty_name, has_age_under_18])
 
 
-print(outData)
 
-"""
-"""
+print(f'outdata:', outData)
