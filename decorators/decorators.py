@@ -23,6 +23,7 @@ sumNumbers(1,2,3)
 # Example2
 # Define a decorator that prints the duration of a function and prints its input and output
 
+
 # Step1: import the datetime
 from datetime import datetime
 
