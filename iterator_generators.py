@@ -1,5 +1,4 @@
 # Iterator
-"""
 l = [1, 2, 3, 4, 5]
 
 
@@ -23,7 +22,7 @@ print(next(my_iterator))
 l = [number for number in range(1, 100) if number % 2 == 0]
 print(l)
 
-"""
+
 # Generator
 
 l = [1, 2, 3, 4, 5]
