@@ -2,8 +2,8 @@
 l = [1, 2, 3, 4, 5]
 
 
-#for number in l:
-#	print(number)
+for number in l:
+	print(number)
 
 my_iterator = iter(l)
 
@@ -27,7 +27,7 @@ print(l)
 
 l = [1, 2, 3, 4, 5]
 
-"""
+
 def test():
 	for number in l:
 		return number
@@ -35,21 +35,19 @@ def test():
 #result = test()
 #print(result)
 #print(result)
-"""
-"""
+
+
 def test():
 	for number in l:
 		yield number
-"""
-"""
+
 result = test()
 print(result)
 print(result)
 print(result)
 print(result)
 print(result)
-"""
-"""
+
 my_generator = test()
 
 print(next(my_generator))
@@ -59,7 +57,6 @@ print(next(my_generator))
 print(next(my_generator))
 print(next(my_generator))
 
-"""
 t = (number for number in range(1, 10))
 print(t)
 
