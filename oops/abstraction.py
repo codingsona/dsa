@@ -15,6 +15,7 @@ print(dog.sound)
 cat = Animal("Kitty", "Meaw")
 print(cat.name)
 """
+
 """
 class Animal:
     def __init__(self, name, sound):
@@ -64,7 +65,7 @@ class Whale(Mammals):
         return "I am a whale.."
 
     def get_place(self):
-        return "I live inside water.."
+        return "I live in water.."
 
 
 h = Humans()
@@ -80,9 +81,15 @@ print(w.get_place())
 m = Mammals()
 m.get_introduction()
 m.get_place()
+
 """
 
+
+
+
 from abc import ABC, abstractmethod
+
+
 """
 class Mammals(ABC):
 
@@ -115,9 +122,10 @@ class Whale(Mammals):
 h = Humans()
 print(h.get_introduction())
 print(h.get_place())
+
+
+
 """
-
-
 
 class Phone(ABC):
 
@@ -134,5 +142,9 @@ class TCS(Phone):
 
 
 class Infosys(Phone):
-    def get_location(self):
-        return "location without coordinates.."
+    def get_price(self):
+        return "The price is **"
+
+
+    
+
