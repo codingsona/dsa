@@ -9,9 +9,9 @@ def subtract(a, b):
 boolean = True
 
 
-class TestAdd(unittest.TestCase):
+class TestAll(unittest.TestCase):
     def test_add(self):
-        #self.assertEqual(2, 2)
+        self.assertEqual(2, 2)
         self.assertEqual(add(2, 4), 6)
         self.assertNotEqual(add(2,4), 10)
 

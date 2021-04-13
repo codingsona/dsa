@@ -1,3 +1,4 @@
+
 from encapsulation import A
 
 a = A()

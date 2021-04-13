@@ -16,10 +16,11 @@ class TestAdd(unittest.TestCase):
 
     def test_bool(self):
         self.assertTrue(testing.test1.boolean)
-        #self.assertFalse(boolean)
+        #self.assertFalse(testing.test1.boolean)
 
     def test_subtract(self):
         self.assertEqual(testing.test1.subtract(30, 10), 20)
+        self.assertEqual(testing.test1.subtract(self.a, self.b), -1)
 
     def tearDown(self):
         print(self.boolean)
