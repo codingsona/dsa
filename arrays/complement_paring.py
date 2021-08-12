@@ -20,7 +20,7 @@ def complementing_number_pair(in_list,target_sum):
 
 
 
-l = [4,5,8,7,6,10,2,-8]
+l = [4,5,8,7,6,10,2,-7]
 target = 0
 
 print(complementing_number_pair(l,target))
